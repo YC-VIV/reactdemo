@@ -1,0 +1,62 @@
+.left {
+    width: 15%;
+    max-height: 100%;
+    overflow: auto;
+    color: #fff;
+    background-color: #e2e2e2;
+
+    :global {
+        .ant-tree-node-content-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        :where(.css-dev-only-do-not-override-p7e5j5).ant-tree.ant-tree-directory .ant-tree-treenode-selected::before {
+            background-color: #38a594;
+        }
+        :where(.css-dev-only-do-not-override-p7e5j5).ant-tree.ant-tree-directory .ant-tree-treenode:hover:before{
+            background-color: #38a594;
+        }
+        :where(.css-dev-only-do-not-override-p7e5j5).ant-tree{
+            background-color: #e2e2e2;
+        }
+    }
+}
+.header{
+    display: flex;
+    height: 20px;
+    padding: 10px;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    img{height: 100%;}
+}
+.menu{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    div{padding:5px 12px;}
+    div:hover{background-color: rgba(0,0,0,0.04);}
+}
+.tree {
+    height: 30px;
+
+    img {
+        height: 66%;
+        position: absolute;
+        right: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.modalFooter{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
